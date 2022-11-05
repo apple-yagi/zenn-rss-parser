@@ -8,14 +8,22 @@
   "scripts": {
     "build": "run-p build:*",
     "build:esbuild": "ts-node build.ts",
-    "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir './dist'"
+    "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir './dist'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "jsdom": "^20.0.2",
+    "node-fetch": "^3.2.10"
   },
   "devDependencies": {
+    "@types/jsdom": "^20.0.0",
     "@types/node": "^18.11.9",
     "esbuild": "^0.15.13",
     "npm-run-all": "^4.1.5",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vite": "^3.2.2",
+    "vitest": "^0.24.5"
   },
   "repository": {
     "type": "git",
