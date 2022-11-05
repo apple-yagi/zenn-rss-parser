@@ -3,6 +3,7 @@
     "target": "ES6",
     "module": "CommonJS",
     "declaration": true,
+    "resolveJsonModule": true,
     "strict": true,
     "lib": ["ES2020", "dom"],
     "baseUrl": ".",
