@@ -1,6 +1,6 @@
 {
   "name": "zenn-rss-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny library for turning Zenn RSS XML feeds into JavaScript objects.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
