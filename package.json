@@ -1,0 +1,20 @@
+{
+  "name": "zenn-rss-parser",
+  "version": "0.0.1",
+  "description": "A tiny library for turning Zenn RSS XML feeds into JavaScript objects.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Zenn",
+    "RSS",
+    "RSS to JSON",
+    "RSS reader",
+    "RSS parser",
+    "RSS to JS",
+    "Feed reader"
+  ],
+  "author": "apple-yagi",
+  "license": "MIT"
+}
