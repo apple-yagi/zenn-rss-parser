@@ -2,6 +2,6 @@ import { test, expect } from "vitest";
 import { parse } from ".";
 
 test("parser unit test", async () => {
-  const feed = await parse("apple_yagi");
-  expect(feed).not.toHaveLength(0);
+  const channel = await parse("apple_yagi");
+  expect(channel.items).not.toHaveLength(0);
 });
