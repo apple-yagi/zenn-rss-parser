@@ -4,7 +4,11 @@
     "module": "CommonJS",
     "declaration": true,
     "strict": true,
-    "lib": ["ES2020", "dom"]
+    "lib": ["ES2020", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src"]
+    }
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
