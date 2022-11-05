@@ -19,8 +19,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "jsdom": "20.0.2",
-    "node-fetch": "3.2.10"
+    "isomorphic-fetch": "3.0.0",
+    "jsdom": "20.0.2"
   },
   "devDependencies": {
     "@types/jsdom": "20.0.0",

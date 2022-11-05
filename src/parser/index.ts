@@ -1,4 +1,4 @@
-import "../global/fetch";
+require("isomorphic-fetch");
 import "../global/dom";
 
 const ORIGIN = "https://zenn.dev/";
