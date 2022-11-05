@@ -1,5 +1,5 @@
-import "~/fetch";
-import "~/dom";
+import "../global/fetch";
+import "../global/dom";
 
 const ORIGIN = "https://zenn.dev/";
 const FEED_PATH = "/feed";
@@ -16,7 +16,7 @@ export const parse = async (zennId: string): Promise<FeedItem[]> => {
   const url = ORIGIN + zennId + FEED_PATH;
 
   const text = await (await fetch(url)).text();
-  const feed = new global.DOMParser().parseFromString(text, "text/xml");
+  const feed = new DOMParser().parseFromString(text, "text/xml");
   const arr = Array.from(feed.querySelectorAll("item"));
 
   const items: FeedItem[] = [];
