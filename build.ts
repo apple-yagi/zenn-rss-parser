@@ -1,9 +1,11 @@
 import { build } from "esbuild";
+import { dependencies } from "./package.json";
 
 const entryFile = "src/index.ts";
 const shared = {
   bundle: true,
   entryPoints: [entryFile],
+  external: Object.keys(dependencies),
   minify: true,
   sourcemap: true,
 };
